@@ -1,0 +1,86 @@
+.shop_category .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:150px;
+
+}
+.shop_category .container .filter{
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.shop_category .container .filter button{
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 60px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.shop_category .container .filter p span{
+    font-weight: bold;
+}
+.shop_category .container .banner .banner_image{
+    max-width: 100%;
+    height: auto;
+}
+.shop_category .container .products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(calc(25% - 20px), 1fr));
+    gap: 20px;
+    position: relative;
+}
+.shop_category .container .products button {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 35px;
+    border-radius: 60px;
+    border: none;
+    background-color: rgb(213, 211, 211);
+    color: rgb(99, 99, 99);
+    cursor: pointer;
+    width: fit-content;
+}
+@media(max-width:336px){
+    .shop_category .container .products button{
+        font-size: 11px;
+    }
+}
+
+@media(max-width:991px){
+    .shop_category .container .products{
+        grid-template-columns: repeat(auto-fill,minmax(calc(33% - 20px), 1fr));
+    }
+}
+@media(max-width:737px){
+    .shop_category .container .products{
+        grid-template-columns: repeat(auto-fill,minmax(calc(50% - 20px), 1fr));
+    }
+}
+@media(max-width:482px){
+    .shop_category .container .products{
+        grid-template-columns: repeat(auto-fill,minmax(100%, 1fr));
+    }
+}
+@media(max-width:660px){
+    .shop_category .container .filter{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .shop_category .container .filter button{
+        width: fit-content;
+       
+    }
+    .shop_category .container .filter p{
+        font-size: smaller;
+    }
+}

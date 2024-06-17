@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+.auth{
+    height: 100vh;
+    position: relative;
+    background-color: #fde1ff;
+}
+.auth .content{
+    height: calc(100% - 85px);
+    background-color: #fde1ff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth .content h3{
+    font-size: 30px;
+}
+.auth .content form{
+    background-color: white;
+    z-index: 1;
+    padding: 30px 30px 80px 30px;
+    transition: 0.6s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.auth .content form input{
+    padding: 15px;
+    max-width: 550px;
+}
+.auth .content form input:focus{
+    outline: none;
+}
+.auth .content form input[type='submit']{
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.auth .content p{
+    font-size: 15px;
+    color: #333;
+    font-size: 13px;
+}
+.auth .content p span{
+    color: var(--main-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+.auth .content form .terms label{
+    font-size: 13px;
+}
+.auth .content form .terms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+.auth .content .signup-form{
+    display: none;
+}
+.auth .content form .terms input[type="checkbox"]:checked{
+    background-color: var(--main-color);
+}
+
+.password{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-field{
+    position: relative;
+    width: 100%;
+}
+.display-password{
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    cursor: pointer;
+}
+
+.register-password{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.register-password-field{
+    position: relative;
+    width: 100%;
+}

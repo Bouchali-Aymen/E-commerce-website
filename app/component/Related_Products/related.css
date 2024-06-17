@@ -1,0 +1,9 @@
+.related_products{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.related_products .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(calc(300px - 20px),1fr));
+    gap: 10px;
+}

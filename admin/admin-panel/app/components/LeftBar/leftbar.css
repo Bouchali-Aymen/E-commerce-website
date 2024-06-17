@@ -1,0 +1,29 @@
+.leftbar{
+    height: 100%;
+    background-color: white;
+    width: 20%;
+    padding: 20px 15px 0 15px;
+}
+.leftbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.leftbar ul li {
+    background-color: rgb(240, 238, 238);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media(max-width:900px){
+    .leftbar{
+        height: auto;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}

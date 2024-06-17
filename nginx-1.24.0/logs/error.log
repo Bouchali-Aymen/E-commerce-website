@@ -1,0 +1,9 @@
+2024/03/06 20:35:33 [emerg] 14636#8356: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/03/06 20:36:06 [emerg] 14956#12292: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/03/08 18:18:01 [emerg] 14820#15076: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/03/08 18:22:11 [error] 12904#7664: *1 CreateFile() "C:\Users\Administrator\Desktop\react\e-com\nginx-1.24.0/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2024/03/08 18:51:30 [emerg] 7972#10168: "server" directive is not allowed here in C:\Users\Administrator\Desktop\react\e-com\nginx-1.24.0/conf/nginx.conf:47
+2024/03/08 18:52:15 [emerg] 15260#12860: bind() to 0.0.0.0:4000 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/03/08 18:58:03 [emerg] 7612#8676: bind() to 0.0.0.0:4000 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/03/08 19:17:05 [emerg] 13496#14584: bind() to 0.0.0.0:4000 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/03/08 19:18:38 [emerg] 11944#8580: bind() to 0.0.0.0:4000 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)

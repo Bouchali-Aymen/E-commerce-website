@@ -1,0 +1,193 @@
+.product .container{
+    padding-bottom: var(--sections-padding);
+    display: block;
+}
+.product .container .content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.product .container .content .images{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.product .container .content .second{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product .container .content .main-image{
+    height: calc(500px + 48px);
+    width: auto;
+}
+
+.product .container .content .second .second-image{
+    max-height: 125px;
+    width: auto;
+}
+.product .container .content .info{
+    margin-left: 30px;
+    height: calc(500px + 48px);
+}
+.product .container .es-info h1{
+    color: #333;
+    margin-bottom: 20px;
+}
+.product .container .es-info .rating{
+    display: flex;
+    align-items: center;
+}
+
+.product .container .es-info .rating p{
+    margin-left: 10px;
+}
+.product .container .es-info .price{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.product .container .es-info .price h3:first-child{
+    color: #666;
+    text-decoration: line-through;
+}
+.product .container .es-info .price h3:last-child{
+    color: var(--main-color);
+}
+.product .container .content .info .description{
+    margin-top: 30px;
+}
+.product .container .content .info .description p{
+    font-size: 15px;
+}
+.product .container .content .info .size{
+    margin-top: 20px;
+}
+.product .container .content .info .size h3{
+    color: #666;
+}
+.product .container .content .info .size .sizes{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.product .container .content .info .size .sizes .box{
+    padding: 10px 15px;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+.product .container .content .info button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid rgb(135, 135, 135);
+    cursor: pointer;
+}
+.product .container .content .info .footer-product{
+    margin-top: 30px;
+}
+.product .container .content .info .footer-product span{
+    font-weight: normal;
+}
+.product .container .content .info .footer-product h5:first-child{
+    margin-bottom: 10px;
+}
+.product .container  .first{
+    display: none;
+}
+
+
+@media (max-width:1115px) {
+    .product .container .content .main-image{
+        height: calc(400px + 48px);
+        width: auto;
+    }
+    
+    .product .container .content .second .second-image{
+        max-height: 100px;
+        width: auto;
+    }
+    .product .container .content .info{
+        margin-left: 30px;
+        height: calc(400px + 48px);
+    }
+}
+@media(max-width:991px){
+    .product .container .content{
+        flex: 1;
+    }
+    .product .container .content .images{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .product .container .content .images .main-image{
+        width: 400px;
+    }
+    .product .container .content .second .second-image{
+        width: 88px;
+        height: auto;
+    }
+    .product .container .content .second{
+        flex-direction: row;
+    }
+}
+
+@media(max-width:767px){
+    .product .container .content{
+        flex-direction: column;
+    }
+    .product .container  .first{
+        display: block;
+    }
+    .product .container  .last{
+        display: none;
+    }
+    .product .container .content .info{
+        margin-left: 0;
+    }
+    .product .container .content{
+        text-align: center;
+        align-items: center;
+    }
+    .product .container .content .info .size{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .product .container .content .info .size .sizes{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product .container{
+        text-align: center;
+    }
+    .product .container  .first{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media(max-width:280px){
+    .product .container .content .images{
+        align-items: center;
+    }
+    .product .container .content .images .main-image{
+        max-height: 300px;
+        width: 250px;
+    }
+    .product .container .content .images .second{
+        display: none;
+    }
+}
+

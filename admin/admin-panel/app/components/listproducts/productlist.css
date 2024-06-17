@@ -1,0 +1,37 @@
+.productlist{
+    background-color: white;
+    padding: 30px 40px 30px 40px;
+    width: 90%;
+    margin-top: 25px;
+    text-align: center;
+    
+}
+
+.productlist h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.content{
+    width: 100%;
+    margin-bottom: 70px;
+    overflow-y:scroll;
+    max-height: 100%;
+    text-align: left;
+}
+
+.content .head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr;
+    border-bottom: 2px solid #e2e2e2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.content .box{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr;
+    border-bottom: 2px solid #e2e2e2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

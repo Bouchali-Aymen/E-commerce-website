@@ -1,0 +1,98 @@
+.cart-item{
+    margin: 60px 0 60px 0;
+}
+
+.cart-item .container{
+    display: block;
+}
+.cart-item .container .content{
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+
+.cart-item .container .content .head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr;
+    border-bottom: 2px solid #e2e2e2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cart-item .container .content .box{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr;
+    border-bottom: 2px solid #e2e2e2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cart-item .container .content .box .product{
+    display: flex;
+    gap: 15px;
+}
+.cart-item .container .content .box .product p{
+    font-size: 15px;
+}
+
+.cart-item .container .cart-total{
+    display: flex;
+    width: 100%;
+    gap: 100px;
+}
+.cart-item .container .cart-total .totals{
+    width: 50%;
+}
+.cart-item .container .cart-total  .promo{
+    width: 50%;
+}
+.cart-item .container .cart-total .totals .cell{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e2e2e2;
+    padding: 15px 0 15px 0;
+}
+.cart-item .container .cart-total .totals h2{
+    margin-bottom: 30px;
+}
+.cart-item .container .cart-total .promo p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.cart-item .container .cart-total .promo form input[type="text"]{
+    padding: 13px 10px;
+    border: none;
+    background-color: #e2e2e2;
+    width: 300px;
+}
+.cart-item .container .cart-total .promo form input[type="text"]:focus{
+    outline: none;
+}
+.cart-item .container .cart-total .promo form input[type="submit"]{
+    padding: 13px 30px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-item .container .cart-total .totals .cell:last-child p{
+    font-weight: bold;
+}
+
+.cart-item .container .cart-total .totals button{
+    color: white;
+    background-color: var(--main-color);
+    margin-top: 45px;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+@media(max-width:767px){
+    .cart-item .container .content .box .product{
+        flex-direction: column;
+    }
+    .cart-item .container .cart-total .promo form input[type="submit"]{
+        margin-top: 20px;
+    }
+}

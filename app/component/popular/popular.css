@@ -1,0 +1,11 @@
+.popular{
+    padding-top: var(--sections-padding);
+    padding-bottom: var(--sections-padding);
+    width: 100%;
+    text-align: center;
+}
+.popular .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(calc(300px - 20px),1fr));
+    gap: 10px;
+}

@@ -1,0 +1,59 @@
+
+.addproduct{
+    background-color: white;
+    padding: 30px 40px 30px 40px;
+    width: 80%;
+    margin-top: 25px;
+    display: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+input{
+    padding: 15px 10px 15px 10px;
+    font-size: smaller;
+    border: 2px solid rgb(240, 238, 238);
+}
+input:focus{
+    outline: none;
+}
+
+select{
+    width: fit-content;
+    border: 2px solid rgb(240, 238, 238);
+    padding: 12px 10px 12px 10px;
+
+}
+select:focus{
+    outline: none;
+}
+.price{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.price .prix{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc(50% - 10px);
+}
+.price .offer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc(50% - 10px);
+}
+
+input[type="submit"]{
+    padding: 10px 50px 10px 50px;
+    background-color: #5871ff;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
